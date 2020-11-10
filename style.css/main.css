@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/bg-pattern-top-mobile.svg");
+    background-position: -60px 0px;
+    background-repeat: no-repeat;
+    font-family: 'Spartan', sans-serif;
+}
+#bodywrap{
+    width: 100%;
+    height: 100%;
+    background: url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+}
+#headtext{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+#headtext h1{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+#headtext p{
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+#ratesectioncover{
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+}
+.ratedivs{
+    text-align: center;
+    padding: 10px;
+    background: hsl(300, 24%, 96%);
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.ratedivs span{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.starscontainer{
+    padding-bottom: 5px;
+}
+#testimonysection{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding-bottom: 80px;
+}
+.testimonydivs{
+    padding: 25px;
+    background:  hsl(300, 43%, 22%);
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+.testimonydivs p{
+    color: hsl(300, 24%, 96%);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.testifierdetails{
+    display: flex;
+}
+.testimonyimgdiv{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    font-size: 12px;
+}
+.testimonyimgdiv img{
+    width: 100%;
+    border-radius: 50%;
+}
+.testimonytext h4{
+    margin: 5px;
+    margin-left: 0;
+    color: hsl(0, 0%, 100%);
+}
+.testimonytext span{
+    color:  hsl(303, 10%, 53%);
+}
+@media (min-width: 770px) {
+ body{
+    background-image: url("../images/bg-pattern-top-desktop.svg");
+    padding-left: 100px;
+    padding-right: 100px;
+ }
+ #bodywrap{
+    background-image: url("../images/bg-pattern-bottom-desktop.svg");
+    background-position-x: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+ #headtext{
+     width: 50%;
+     margin: 10%;
+     text-align: left;
+}
+.ratedivs{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.ratedivs:nth-child(2){
+    margin-left: 50px;
+}
+.ratedivs:nth-child(3){
+    margin-left: 100px;
+}
+#testimonysection{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+}
+.testimonydivs{
+    position: relative;
+    padding: 25px;
+    background:  hsl(300, 43%, 22%);
+    border-radius: 7px;
+    margin-right: 10px;
+}
+.testimonydivs:nth-child(2){
+    top: 15px;
+}
+.testimonydivs:nth-child(3){
+    top: 30px;
+}
+}
